@@ -4,12 +4,12 @@ Cryptum is a web-based application designed to educate users about cryptocurrenc
 
 ## Features
 
-- 📈 **Real-time cryptocurrency price tracking** using **CoinGecko API**.
-- 🔐 **User authentication** for secure access.
-- 📧 **Contact form** powered by **EmailJS**.
-- 🛠️ **Admin panel** for managing users and content.
-- 📊 **Interactive graphs** for price trends and investment analysis.
-- 🔎 **Secure validation** for user inputs.
+-  **Real-time cryptocurrency price tracking** using **CoinGecko API**.
+-  **User authentication** for secure access.
+-  **Contact form** powered by **EmailJS**.
+-  **Admin panel** for managing users and content.
+-  **Interactive graphs** for price trends and investment analysis.
+-  **Secure validation** for user inputs.
 
 ## Requirements
 
@@ -23,26 +23,26 @@ Ensure you have the following installed:
 
 ## Setup Instructions
 
-### 1️⃣ Clone the Repository
+### 1 Clone the Repository
 
 ```sh
 git clone https://github.com/samychame/Cryptum.git
 cd Cryptum
 ```
 
-### 2️⃣ Open in Visual Studio 2022
+### 2️ Open in Visual Studio 2022
 
 1. Open **Visual Studio 2022**.
 2. Click **File > Open > Project/Solution**.
 3. Select **`myCryptum.sln`**.
 
-### 3️⃣ Restore Dependencies
+### 3️ Restore Dependencies
 
 ```sh
 dotnet restore
 ```
 
-### 4️⃣ Set Up the Database
+### 4️ Set Up the Database
 
 Run the following SQL script in **SQL Server Management Studio (SSMS)**:
 
@@ -60,7 +60,7 @@ CREATE TABLE Users (
 );
 ```
 
-### 5️⃣ Configure API Keys
+### 5️ Configure API Keys
 
 Create a `config.js` file in `jsFiles/` with:
 
@@ -78,9 +78,9 @@ const CONFIG = {
 export default CONFIG;
 ```
 
-🚨 **DO NOT upload ********`config.js`******** to GitHub!**
+ **DO NOT upload ********`config.js`******** to GitHub!**
 
-### 6️⃣ Run the Project
+### 6️ Run the Project
 
 Press `F5` in **Visual Studio 2022** or use:
 
@@ -91,5 +91,5 @@ dotnet run
 
 ## Author
 
-Developed by Samy Chame 🚀
+Developed by Samy Chame 
 
