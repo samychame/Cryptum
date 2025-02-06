@@ -1,0 +1,41 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    width: 80%;
+    padding: 60px;
+    margin-top: 20px;
+    height: 300px;
+}
+
+.sub {
+    font-size: 20px;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    margin-top: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.before {
+    margin-top: 25px;
+}

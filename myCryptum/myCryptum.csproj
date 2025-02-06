@@ -1,0 +1,325 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A67D3FCC-0E4B-45E9-AF5C-E24F3FF15518}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>myCryptum</RootNamespace>
+    <AssemblyName>myCryptum</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44339</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="admin.aspx" />
+    <Content Include="jsFiles\config.js" />
+    <Content Include="styles\admin.css" />
+    <Content Include="styles\Admintable.css" />
+    <Content Include="adminQuery.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="cardano.aspx" />
+    <Content Include="styles\coins.css" />
+    <Content Include="jsFiles\contact.js" />
+    <Content Include="contactUs.aspx" />
+    <Content Include="styles\contactUs.css" />
+    <Content Include="cryptos.aspx" />
+    <Content Include="styles\cryptos.css" />
+    <Content Include="delete.aspx" />
+    <Content Include="styles\delete.css" />
+    <Content Include="doge.aspx" />
+    <Content Include="styles\followUs.css" />
+    <Content Include="Global.asax" />
+    <Content Include="jsFiles\validations.js" />
+    <Content Include="graph.aspx" />
+    <Content Include="styles\graph.css" />
+    <Content Include="images\background.png" />
+    <Content Include="images\bitcoin.png" />
+    <Content Include="images\cardano.png" />
+    <Content Include="images\crypto.jfif" />
+    <Content Include="images\crypto2.jfif" />
+    <Content Include="images\dogecoin.png" />
+    <Content Include="images\ethereum.png" />
+    <Content Include="images\newlogo.jfif" />
+    <Content Include="images\newlogo1.jpg" />
+    <Content Include="images\solana.png" />
+    <Content Include="images\cryptum.png" />
+    <Content Include="jsFiles\prices.js" />
+    <Content Include="styles\loginstyle.css" />
+    <Content Include="styles\adminQuery.css" />
+    <Content Include="register.aspx" />
+    <Content Include="showTable.aspx" />
+    <Content Include="solana.aspx" />
+    <Content Include="startInvst.aspx" />
+    <Content Include="styles\startInvst.css" />
+    <Content Include="styles\style.css" />
+    <Content Include="styles\register.css" />
+    <Content Include="styles\main.css" />
+    <Content Include="styles\about.css" />
+    <Content Include="update.aspx" />
+    <Content Include="styles\update.css" />
+    <Content Include="Web.config" />
+    <Content Include="main.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="bitcoin.aspx" />
+    <Content Include="ethereum.aspx" />
+    <Content Include="followUs.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminQuery.aspx.cs">
+      <DependentUpon>adminQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminQuery.aspx.designer.cs">
+      <DependentUpon>adminQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\MyAdoHelperSql.cs" />
+    <Compile Include="cardano.aspx.cs">
+      <DependentUpon>cardano.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cardano.aspx.designer.cs">
+      <DependentUpon>cardano.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactUs.aspx.cs">
+      <DependentUpon>contactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactUs.aspx.designer.cs">
+      <DependentUpon>contactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cryptos.aspx.cs">
+      <DependentUpon>cryptos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cryptos.aspx.designer.cs">
+      <DependentUpon>cryptos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doge.aspx.cs">
+      <DependentUpon>doge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doge.aspx.designer.cs">
+      <DependentUpon>doge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="graph.aspx.cs">
+      <DependentUpon>graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="graph.aspx.designer.cs">
+      <DependentUpon>graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master.Master.cs">
+      <DependentUpon>master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master.Master.designer.cs">
+      <DependentUpon>master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showTable.aspx.cs">
+      <DependentUpon>showTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showTable.aspx.designer.cs">
+      <DependentUpon>showTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bitcoin.aspx.cs">
+      <DependentUpon>bitcoin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bitcoin.aspx.designer.cs">
+      <DependentUpon>bitcoin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ethereum.aspx.cs">
+      <DependentUpon>ethereum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ethereum.aspx.designer.cs">
+      <DependentUpon>ethereum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="solana.aspx.cs">
+      <DependentUpon>solana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="solana.aspx.designer.cs">
+      <DependentUpon>solana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="startInvst.aspx.cs">
+      <DependentUpon>startInvst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="startInvst.aspx.designer.cs">
+      <DependentUpon>startInvst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="followUs.aspx.cs">
+      <DependentUpon>followUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="followUs.aspx.designer.cs">
+      <DependentUpon>followUs.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61934</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44339/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

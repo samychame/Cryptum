@@ -1,0 +1,45 @@
+﻿.list {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:50px;
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0 15px;
+    color: #fcb103;
+    border:1px solid black;
+    padding:20px 30px;
+    border-radius:15px;
+    width:150px;
+    height:100px;
+}
+.top {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.bottom {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.coin img{
+    width:40px;
+    margin-right:10px;
+    float:left;
+}
+h1 {
+    text-align: center;
+    display: block;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+}
+.price {
+    width:50%;
+    float:right;
+}

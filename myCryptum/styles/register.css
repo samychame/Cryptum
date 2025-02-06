@@ -1,0 +1,68 @@
+﻿body {
+
+}
+.register {
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 100px #ccc;
+    margin-top: 500px;
+}
+h1{
+    font-size:40px;
+    text-align:center;
+    margin:20px 0;
+
+}
+label {
+    font-size: 18px;
+    color: #333;
+
+}
+.radio {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.gender{
+    margin-right:50px;
+}
+input[type= "radio"]{
+    margin-right:5px;
+
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 80%;
+    margin-top: 10px;
+}
+button[type="submit"] {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width:100%;
+    margin-top:20px;
+    font-family:serif;
+}
+
+    button[type="submit"]:hover {
+        background: #555;
+    }
+.msg {
+    color: red;
+    margin-bottom: 15px;
+}

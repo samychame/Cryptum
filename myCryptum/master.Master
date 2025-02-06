@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="myCryptum.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="styles/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="jsFiles/validations.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="loggedIn()">
+    <nav>
+        <div class ="logo">
+            <a href="main.aspx"><img src ="images/cryptum.png" /></a>
+        </div>
+        <ul>
+           
+            <%=admin %>
+            
+            <li>
+                <a href="followUs.aspx"></a>
+                Follow Us
+            </li>
+            <li>
+                <a href="startInvst.aspx"></a>
+                Start Investing
+            </li>
+            <li>
+                <a href="cryptos.aspx"></a>
+                Cryptos
+            </li>
+            <li>
+                <a href="contactUs.aspx"></a>
+                Contact Us
+            </li>
+            <li>
+                <a href="about.aspx"></a>
+                About
+            </li>
+             <li id ="login">
+                    <a href="register.aspx" ></a>
+                 Register
+             </li>
+             <li id ="login1">
+                    <a href="login.aspx" ></a>
+                 Login
+             </li>
+        </ul>
+    </nav>
+ 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+</body>
+</html>

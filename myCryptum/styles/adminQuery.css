@@ -1,0 +1,61 @@
+﻿
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #0f002b;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-inline: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+    .button:hover {
+        background-color: #fcb103;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+
+    .button:active {
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+h1 {
+    margin-top:50px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.container-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.container h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hits {
+    font-size: 22px;
+    color: #ff6f61;
+    margin-bottom: 40px;
+}
