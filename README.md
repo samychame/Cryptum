@@ -18,7 +18,6 @@ Ensure you have the following installed:
 - **Visual Studio 2022** (for .NET development)
 - **ASP.NET Web Forms**
 - **SQL Server Database**
-- **Node.js** (for frontend dependencies, if needed)
 - **Git** (for version control)
 
 ## Setup Instructions
